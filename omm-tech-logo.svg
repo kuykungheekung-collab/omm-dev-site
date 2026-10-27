@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" role="img" aria-labelledby="title">
+  <title id="title">omm tech developer</title>
+  <circle cx="360" cy="360" r="342" fill="#0b1220"/>
+  <circle cx="360" cy="360" r="316" fill="#101c30"/>
+  <circle cx="360" cy="360" r="315" fill="none" stroke="#26344d" stroke-width="5"/>
+  <path d="m210 240-80 73 80 73M510 240l80 73-80 73" fill="none" stroke="#20c8df" stroke-linecap="round" stroke-linejoin="round" stroke-width="25"/>
+  <text x="360" y="350" fill="#f5f8fc" font-family="Arial, Helvetica, sans-serif" font-size="104" font-weight="700" text-anchor="middle">omm</text>
+  <path d="M250 386h220" fill="none" stroke="#20c8df" stroke-linecap="round" stroke-width="9"/>
+  <text x="360" y="472" fill="#20c8df" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" letter-spacing="19" text-anchor="middle">TECH</text>
+  <text x="360" y="530" fill="#9aa8bc" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" letter-spacing="9" text-anchor="middle">DEVELOPER</text>
+</svg>

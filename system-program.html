@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f2f8fc">
+    <meta name="description" content="ส่งรายละเอียดระบบหรือโปรแกรมที่ต้องการให้ omm-dev ช่วยพัฒนา">
+    <title>ระบบและโปรแกรม | omm-dev</title>
+    <link rel="icon" href="omm-tech-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="bot.css">
+    <script src="system-program.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="หน้าหลัก.html" aria-label="omm-dev หน้าหลัก">
+                <img class="brand-symbol" src="omm-tech-logo.svg" alt="">
+                <span>omm<span class="brand-accent">-dev</span></span>
+            </a>
+            <nav class="page-nav" aria-label="เมนูหลัก">
+                <a href="หน้าหลัก.html">หน้าหลัก</a>
+                <a href="ตัวอย่างงาน.html">ตัวอย่างผลงาน</a>
+                <a href="web%20template.html">เทมเพลตเว็บไซต์</a>
+                <a href="ล็อกอิน.html">เข้าสู่ระบบ</a>
+                <a class="page-nav-cta" href="signup.html">สมัครสมาชิก</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro" aria-labelledby="page-title">
+            <div class="intro-copy">
+                <span class="eyebrow"><span class="eyebrow-dot"></span> CUSTOM SYSTEM & SOFTWARE</span>
+                <h1 id="page-title">ระบบและโปรแกรม<br><span>ออกแบบตามโจทย์คุณ</span></h1>
+                <p>เล่าให้ฟังว่าต้องการให้ช่วยทำระบบหรือโปรแกรมอะไร ใช้ทำงานแบบไหน แล้วเราจะนำรายละเอียดไปคุยและประเมินแนวทางให้เหมาะกับคุณ</p>
+                <div class="price-note">
+                    <span class="price-icon" aria-hidden="true">⌘</span>
+                    <span><strong>เริ่มต้นจากไอเดียของคุณ</strong><br>ระบบจัดการ เครื่องมือทำงาน หรือโปรแกรมเฉพาะทาง</span>
+                </div>
+            </div>
+            <div class="intro-art" aria-hidden="true">
+                <div class="art-orbit orbit-a"></div>
+                <div class="art-orbit orbit-b"></div>
+                <div class="bot-window">
+                    <div class="bot-window-bar"><i></i><i></i><i></i><span></span></div>
+                    <div class="bot-avatar">SYS</div>
+                    <div class="bot-line line-a"></div>
+                    <div class="bot-line line-b"></div>
+                    <div class="bot-command"><span>⌘</span> ระบบในแบบของคุณ</div>
+                    <div class="bot-status"><i></i> พร้อมเริ่มต้น</div>
+                </div>
+                <span class="art-spark spark-a">✦</span>
+                <span class="art-spark spark-b">✧</span>
+            </div>
+        </section>
+
+        <section class="request-layout" aria-label="กรอกรายละเอียดระบบหรือโปรแกรม">
+            <form class="request-card" id="system-request-form">
+                <div class="form-heading">
+                    <span class="step-label">เริ่มต้นคำขอของคุณ</span>
+                    <h2>อยากให้เราทำระบบอะไรให้?</h2>
+                    <p>อธิบายไอเดียหรือปัญหาที่อยากให้ระบบช่วยแก้ ยิ่งมีรายละเอียดก็ยิ่งช่วยประเมินแนวทางได้ตรงขึ้น</p>
+                </div>
+
+                <div class="form-fields">
+                    <div class="field">
+                        <label for="system-description">ระบบหรือโปรแกรมที่ต้องการ <span>(จำเป็น)</span></label>
+                        <textarea id="system-description" name="system-description" rows="6" placeholder="ตัวอย่าง: อยากได้ระบบจัดการสต็อกสินค้า มีหน้าบันทึกสินค้าเข้า-ออก ดูจำนวนคงเหลือ และค้นหาสินค้าตามชื่อ" required></textarea>
+                    </div>
+                    <div class="field">
+                        <label for="system-details">รายละเอียดเพิ่มเติม <span>(ไม่บังคับ)</span></label>
+                        <textarea id="system-details" name="system-details" rows="4" placeholder="เช่น ผู้ใช้งานระบบ อุปกรณ์ที่ใช้ หรือฟังก์ชันอื่นที่อยากได้"></textarea>
+                    </div>
+                    <div class="field">
+                        <label for="contact-info">ช่องทางติดต่อกลับ <span>(ไม่บังคับ)</span></label>
+                        <input id="contact-info" name="contact-info" type="text" autocomplete="off" placeholder="เช่น Discord, อีเมล หรือช่องทางที่สะดวก">
+                    </div>
+                </div>
+
+                <div class="form-bottom">
+                    <p>กรอกข้อมูลเพื่อสร้างสรุปคำขอ จากนั้นคัดลอกไปส่งผ่านช่องทางติดต่อที่คุณสะดวก</p>
+                    <button class="submit-button" type="submit">สรุปคำขอ <span aria-hidden="true">→</span></button>
+                </div>
+            </form>
+
+            <aside class="summary-card">
+                <div class="summary-icon" aria-hidden="true"><img src="omm-tech-logo.svg" alt=""></div>
+                <span class="summary-eyebrow">CUSTOM SYSTEM</span>
+                <h2>เริ่มจากสิ่งที่คุณอยากให้ระบบช่วยทำ</h2>
+                <p>ไม่จำเป็นต้องมีรายละเอียดทางเทคนิค แค่เล่าความต้องการและวิธีทำงานที่อยากได้ เราจะช่วยต่อยอดเป็นแนวทางให้</p>
+                <ul class="summary-list">
+                    <li><span aria-hidden="true">✓</span> อธิบายไอเดียได้ตามสะดวก</li>
+                    <li><span aria-hidden="true">✓</span> ระบุฟังก์ชันที่ต้องการเพิ่มเติมได้</li>
+                    <li><span aria-hidden="true">✓</span> ประเมินแนวทางตามขอบเขตงาน</li>
+                </ul>
+                <div class="summary-price">
+                    <span>ราคาและระยะเวลาประเมินตามรายละเอียด</span>
+                    <strong>พูดคุยก่อนเริ่มพัฒนา</strong>
+                </div>
+            </aside>
+        </section>
+
+        <section class="request-result" id="request-result" aria-live="polite" hidden>
+            <div class="result-heading">
+                <span class="result-icon" aria-hidden="true">✓</span>
+                <div>
+                    <h2>สรุปคำขอพร้อมแล้ว</h2>
+                    <p>คัดลอกข้อความด้านล่าง แล้วส่งผ่านช่องทางติดต่อที่คุณสะดวก</p>
+                </div>
+            </div>
+            <textarea id="request-summary" rows="10" readonly aria-label="สรุปคำขอของคุณ"></textarea>
+            <button class="copy-button" id="copy-request" type="button">คัดลอกคำขอ <span aria-hidden="true">▢</span></button>
+            <p class="copy-status" id="copy-status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span class="footer-brand"><img src="omm-tech-logo.svg" alt="">omm<span class="brand-accent">-dev</span></span>
+        <span>รับพัฒนาระบบและโปรแกรมตามไอเดียของคุณ</span>
+    </footer>
+</body>
+</html>

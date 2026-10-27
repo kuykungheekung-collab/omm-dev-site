@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f2f8fc">
+    <title>รับเขียนบอท Discord | omm-dev</title>
+    <link rel="icon" href="omm-tech-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="bot.css">
+    <script src="bot.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="หน้าหลัก.html" aria-label="omm-dev หน้าหลัก">
+                <img class="brand-symbol" src="omm-tech-logo.svg" alt="">
+                <span>omm<span class="brand-accent">-dev</span></span>
+            </a>
+            <nav class="page-nav" aria-label="เมนูหลัก">
+                <a href="หน้าหลัก.html">หน้าหลัก</a>
+                <a href="web%20template.html">เทมเพลต</a>
+                <a href="ล็อกอิน.html">เข้าสู่ระบบ</a>
+                <a class="page-nav-cta" href="signup.html">สมัครสมาชิก</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <div class="intro-copy">
+                <span class="eyebrow"><span class="eyebrow-dot"></span> DISCORD BOT DEVELOPMENT</span>
+                <h1>บอท Discord<br><span>ในแบบที่คุณต้องการ</span></h1>
+                <p>บอกสิ่งที่อยากให้บอททำ เลือกความสามารถที่สนใจ แล้วส่งรายละเอียดมาได้เลย รับเขียนตามคำสั่งและรูปแบบการใช้งานของเซิร์ฟเวอร์คุณ</p>
+                <div class="price-note">
+                    <span class="price-icon" aria-hidden="true">฿</span>
+                    <span><strong>ราคาตกลงตามความสามารถ</strong><br>ประเมินจากความซับซ้อนและรายละเอียดของบอทแต่ละตัว</span>
+                </div>
+            </div>
+            <div class="intro-art" aria-hidden="true">
+                <div class="art-orbit orbit-a"></div>
+                <div class="art-orbit orbit-b"></div>
+                <div class="bot-window">
+                    <div class="bot-window-bar"><i></i><i></i><i></i><span></span></div>
+                    <div class="bot-avatar">BOT</div>
+                    <div class="bot-line line-a"></div>
+                    <div class="bot-line line-b"></div>
+                    <div class="bot-command"><span>/</span> คำสั่งของคุณ</div>
+                    <div class="bot-status"><i></i> พร้อมทำงาน</div>
+                </div>
+                <span class="art-spark spark-a">✦</span>
+                <span class="art-spark spark-b">✧</span>
+            </div>
+        </section>
+
+        <section class="request-layout" aria-label="เลือกความสามารถและส่งรายละเอียด">
+            <form class="request-card" id="bot-request-form">
+                <div class="form-heading">
+                    <span class="step-label">เริ่มต้นคำขอของคุณ</span>
+                    <h2>อยากให้บอททำอะไรได้บ้าง?</h2>
+                    <p>เลือกได้มากกว่าหนึ่งข้อ แล้วเพิ่มรายละเอียดของคุณได้เลย</p>
+                </div>
+
+                <fieldset class="capability-fieldset">
+                    <legend>เลือกความสามารถที่ต้องการ</legend>
+                    <div class="capability-grid">
+                        <label class="capability-option">
+                            <input type="checkbox" name="capabilities" value="จัดการเซิร์ฟเวอร์และระบบแอดมิน">
+                            <span class="option-icon" aria-hidden="true">⌘</span>
+                            <span class="option-copy"><strong>จัดการเซิร์ฟเวอร์</strong><small>เครื่องมือแอดมินและดูแลสมาชิก</small></span>
+                            <span class="option-check" aria-hidden="true"></span>
+                        </label>
+                        <label class="capability-option">
+                            <input type="checkbox" name="capabilities" value="ระบบต้อนรับและข้อความอัตโนมัติ">
+                            <span class="option-icon icon-welcome" aria-hidden="true">✦</span>
+                            <span class="option-copy"><strong>ต้อนรับสมาชิก</strong><small>ข้อความต้อนรับและประกาศอัตโนมัติ</small></span>
+                            <span class="option-check" aria-hidden="true"></span>
+                        </label>
+                        <label class="capability-option">
+                            <input type="checkbox" name="capabilities" value="ระบบจัดการยศและบทบาท">
+                            <span class="option-icon icon-role" aria-hidden="true">♙</span>
+                            <span class="option-copy"><strong>ยศและบทบาท</strong><small>กำหนดหรือรับยศตามเงื่อนไข</small></span>
+                            <span class="option-check" aria-hidden="true"></span>
+                        </label>
+                        <label class="capability-option">
+                            <input type="checkbox" name="capabilities" value="ระบบ Ticket และรับแจ้งปัญหา">
+                            <span class="option-icon icon-ticket" aria-hidden="true">▤</span>
+                            <span class="option-copy"><strong>ระบบ Ticket</strong><small>เปิดห้องช่วยเหลือหรือรับแจ้งปัญหา</small></span>
+                            <span class="option-check" aria-hidden="true"></span>
+                        </label>
+                        <label class="capability-option">
+                            <input type="checkbox" name="capabilities" value="คำสั่งเฉพาะและคำสั่งอัตโนมัติ">
+                            <span class="option-icon icon-command" aria-hidden="true">/</span>
+                            <span class="option-copy"><strong>คำสั่งเฉพาะ</strong><small>คำสั่ง Slash หรือระบบอัตโนมัติ</small></span>
+                            <span class="option-check" aria-hidden="true"></span>
+                        </label>
+                        <label class="capability-option">
+                            <input type="checkbox" name="capabilities" value="ระบบแต้ม เลเวล หรือกิจกรรม">
+                            <span class="option-icon icon-level" aria-hidden="true">↗</span>
+                            <span class="option-copy"><strong>แต้มและเลเวล</strong><small>เพิ่มกิจกรรมและการมีส่วนร่วม</small></span>
+                            <span class="option-check" aria-hidden="true"></span>
+                        </label>
+                        <label class="capability-option">
+                            <input type="checkbox" name="capabilities" value="เชื่อมต่อ API หรือระบบภายนอก">
+                            <span class="option-icon icon-api" aria-hidden="true">⌘</span>
+                            <span class="option-copy"><strong>เชื่อมต่อระบบอื่น</strong><small>API หรือบริการที่คุณใช้อยู่</small></span>
+                            <span class="option-check" aria-hidden="true"></span>
+                        </label>
+                        <label class="capability-option">
+                            <input type="checkbox" name="capabilities" value="ความสามารถอื่นตามรายละเอียด">
+                            <span class="option-icon icon-custom" aria-hidden="true">✳</span>
+                            <span class="option-copy"><strong>อื่น ๆ ตามต้องการ</strong><small>มีไอเดียเพิ่มเติมเขียนบอกได้เลย</small></span>
+                            <span class="option-check" aria-hidden="true"></span>
+                        </label>
+                    </div>
+                    <p class="selection-count" id="selection-count" aria-live="polite">เลือกแล้ว 0 รายการ</p>
+                    <p class="selection-error" id="selection-error" role="alert" hidden>กรุณาเลือกความสามารถอย่างน้อย 1 ข้อ หรือกรอกรายละเอียดที่ต้องการ</p>
+                </fieldset>
+
+                <div class="form-fields">
+                    <div class="field">
+                        <label for="details">รายละเอียดเพิ่มเติม <span>(ไม่บังคับ)</span></label>
+                        <textarea id="details" name="details" rows="4" placeholder="เล่ารายละเอียด วิธีทำงาน หรือไอเดียของบอทที่อยากได้"></textarea>
+                    </div>
+                    <div class="field">
+                        <label for="discord-id">Discord สำหรับติดต่อกลับ <span>(ไม่บังคับ)</span></label>
+                        <input id="discord-id" name="discord-id" type="text" autocomplete="off" placeholder="เช่น username">
+                    </div>
+                </div>
+
+                <div class="form-bottom">
+                    <p><span aria-hidden="true">🔒</span> รายละเอียดนี้ใช้สำหรับสรุปคำขอของคุณ</p>
+                    <button class="submit-button" type="submit">สรุปคำขอ <span aria-hidden="true">→</span></button>
+                </div>
+            </form>
+
+            <aside class="summary-card">
+                <div class="summary-icon" aria-hidden="true">
+                    <img src="omm-tech-logo.svg" alt="">
+                </div>
+                <span class="summary-eyebrow">CUSTOM DISCORD BOT</span>
+                <h2>บอทที่ออกแบบ<br>มาเพื่อเซิร์ฟเวอร์คุณ</h2>
+                <p>เริ่มจากเลือกความสามารถที่ต้องการ จากนั้นส่งสรุปคำขอไปพูดคุยรายละเอียดกันต่อ</p>
+                <ul class="summary-list">
+                    <li><span aria-hidden="true">✓</span> เลือกได้หลายความสามารถ</li>
+                    <li><span aria-hidden="true">✓</span> เพิ่มคำสั่งหรือไอเดียเฉพาะได้</li>
+                    <li><span aria-hidden="true">✓</span> ตกลงราคาตามขอบเขตงาน</li>
+                </ul>
+                <div class="summary-price">
+                    <span>ราคาเริ่มต้นประเมินตามงาน</span>
+                    <strong>พูดคุยก่อนเริ่มพัฒนา</strong>
+                </div>
+            </aside>
+        </section>
+
+        <section class="request-result" id="request-result" aria-live="polite" hidden>
+            <div class="result-heading">
+                <span class="result-icon" aria-hidden="true">✓</span>
+                <div>
+                    <h2>สรุปคำขอพร้อมแล้ว</h2>
+                    <p>คัดลอกข้อความด้านล่าง แล้วส่งผ่านช่องทางติดต่อที่คุณสะดวก</p>
+                </div>
+            </div>
+            <textarea id="request-summary" rows="10" readonly aria-label="สรุปคำขอของคุณ"></textarea>
+            <button class="copy-button" id="copy-request" type="button">คัดลอกคำขอ <span aria-hidden="true">▢</span></button>
+            <p class="copy-status" id="copy-status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <span class="footer-brand"><img src="omm-tech-logo.svg" alt="">omm<span class="brand-accent">-dev</span></span>
+        <span>รับพัฒนาบอท Discord ตามไอเดียของคุณ</span>
+    </footer>
+</body>
+</html>

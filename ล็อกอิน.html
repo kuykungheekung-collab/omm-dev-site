@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f2f8fc">
+    <title>เข้าสู่ระบบ | omm-dev</title>
+    <link rel="icon" href="omm-tech-logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="auth.css">
+    <script src="auth.js" defer></script>
+</head>
+<body>
+    <main class="auth-page">
+        <section class="auth-card" aria-labelledby="page-title">
+            <div class="brand" aria-label="omm-dev">
+                <img class="brand-symbol" src="omm-tech-logo.svg" alt="">
+                <span>omm<span class="brand-accent">-dev</span></span>
+            </div>
+
+            <div class="auth-heading">
+                <span class="eyebrow">ยินดีต้อนรับกลับ</span>
+                <h1 id="page-title">เข้าสู่ระบบ</h1>
+                <p>กรอกข้อมูลของคุณเพื่อเข้าใช้งานบัญชี</p>
+            </div>
+
+            <form class="auth-form" method="post">
+                <div class="field">
+                    <label for="username">ชื่อผู้ใช้</label>
+                    <input type="text" id="username" name="username" placeholder="กรอกชื่อผู้ใช้" autocomplete="username" required>
+                </div>
+                <div class="field">
+                    <div class="label-row">
+                        <label for="password">รหัสผ่าน</label>
+                    </div>
+                    <div class="password-field">
+                        <input type="password" id="password" name="password" placeholder="กรอกรหัสผ่าน" autocomplete="current-password" required>
+                        <button class="password-toggle" type="button" aria-label="แสดงรหัสผ่าน" aria-pressed="false" data-password-toggle="password">แสดง</button>
+                    </div>
+                </div>
+                <button class="submit-button" type="submit">เข้าสู่ระบบ <span aria-hidden="true">→</span></button>
+            </form>
+            <p class="auth-switch">ยังไม่มีบัญชีใช่ไหม? <a href="signup.html">สมัครสมาชิก</a></p>
+        </section>
+        <p class="page-note">เรียบง่าย ปลอดภัย พร้อมให้คุณเริ่มต้น</p>
+    </main>
+</body>
+</html>
